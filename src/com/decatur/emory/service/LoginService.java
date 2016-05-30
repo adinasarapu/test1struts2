@@ -1,0 +1,12 @@
+package com.decatur.emory.service;
+
+import com.decatur.emory.model.User;
+
+public class LoginService {
+	public boolean verifyLogin(User user){
+		if(user.getUserId().equals("userId") && user.getPassword().equals("password")){
+			return true;
+		}
+		return false;
+	}
+}
